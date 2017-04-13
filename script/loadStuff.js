@@ -28,7 +28,7 @@ function loadThis() {
     
     questions.sort(function(a, b){return 0.5 - Math.random()});
 
-		document.getElementById("thisThings") = thisArray;
+		document.getElementById("thisThings").innerHTML = thisArray;
 		question = questions[0];
 		qs = 0;
 		document.getElementById('question').innerHTML = question;	
@@ -50,6 +50,7 @@ function loadThat() {
     		thatArray.shift();
 
 		document.getElementById("thatCat").innerHTML = thatCat;
+
     
     questions = questions.concat(thatArray);
     
