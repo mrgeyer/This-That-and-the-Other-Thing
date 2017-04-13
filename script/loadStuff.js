@@ -19,16 +19,16 @@ function loadThis() {
 
 		thisArray = thisArray.filter(checkUndefined);
 		thisArray = thisArray.filter(checkBlank);
-    		This = thisArray[0];
+    		thisCat = thisArray[0];
 	    	thisArray.shift();
 
-		document.getElementById("This").value = This;
+		document.getElementById("thisCat").innerHTML = thisCat;
     
-    questions = questions.concat(thisArray);
+    		questions = questions.concat(thisArray);
     
     questions.sort(function(a, b){return 0.5 - Math.random()});
 
-		//document.getElementById("inputTextToSave").value = thisArray;
+		document.getElementById("thisThings") = thisArray;
 		question = questions[0];
 		qs = 0;
 		document.getElementById('question').innerHTML = question;	
@@ -46,10 +46,10 @@ function loadThat() {
 
 		thatArray = thatArray.filter(checkUndefined);
 		thatArray = thatArray.filter(checkBlank);
-        	That = thatArray[0];
+        	thatCat = thatArray[0];
     		thatArray.shift();
 
-		document.getElementById("That").value = That;
+		document.getElementById("thatCat").innerHTML = thatCat;
     
     questions = questions.concat(thatArray);
     
