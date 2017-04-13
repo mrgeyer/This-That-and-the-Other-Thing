@@ -19,8 +19,8 @@ function loadThis() {
 
 		thisArray = thisArray.filter(checkUndefined);
 		thisArray = thisArray.filter(checkBlank);
-    
-    This = thisArray.shift();
+    		This = thisArray[0];
+	    	thisArray.shift();
 
 		document.getElementById("This").value = This;
     
@@ -46,8 +46,8 @@ function loadThat() {
 
 		thatArray = thatArray.filter(checkUndefined);
 		thatArray = thatArray.filter(checkBlank);
-    
-    That = thatArray.shift();
+        	That = thatArray[0];
+    		thatArray.shift();
 
 		document.getElementById("That").value = That;
     
